@@ -1,0 +1,17 @@
+# --- Virtual Environment ---
+# Ignore the virtual environment folder
+venv/
+__pycache__/
+
+# --- API Keys & Secrets ---
+# Ignore all .env files to keep secrets safe
+.env
+*.env
+
+# --- IDE/Editor Files ---
+.vscode/
+.idea/
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
