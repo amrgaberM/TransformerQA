@@ -1,4 +1,0 @@
-PyMuPDF
-sentence-transformers
-chromadb
-groq
