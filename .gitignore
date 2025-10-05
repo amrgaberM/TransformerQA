@@ -1,17 +1,18 @@
-# --- Virtual Environment ---
-# Ignore the virtual environment folder
-venv/
-__pycache__/
-
-# --- API Keys & Secrets ---
-# Ignore all .env files to keep secrets safe
+# Environment
 .env
-*.env
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
 
-# --- IDE/Editor Files ---
+# ChromaDB (will rebuild on deployment)
+chroma_db/
+
+# IDE
 .vscode/
 .idea/
 
-# --- Operating System Files ---
+# OS
 .DS_Store
 Thumbs.db
