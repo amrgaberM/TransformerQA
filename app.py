@@ -457,7 +457,7 @@ load_dotenv()
 # Try Streamlit secrets first, then fall back to .env
 try:
     GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-    st.write("✓ API Key loaded from Streamlit secrets")  # Debug line
+    #st.write(" API Key loaded from Streamlit secrets")  # Debug line
 except Exception as e:
     st.write(f"Secrets error: {e}")  # Debug line
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
