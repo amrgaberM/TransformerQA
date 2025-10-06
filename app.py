@@ -462,8 +462,8 @@ except Exception as e:
     st.write(f"Secrets error: {e}")  # Debug line
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-st.write(f"API Key present: {GROQ_API_KEY is not None}")  # Debug line
-st.write(f"API Key length: {len(GROQ_API_KEY) if GROQ_API_KEY else 0}")  # Debug line
+#st.write(f"API Key present: {GROQ_API_KEY is not None}")  # Debug line
+#st.write(f"API Key length: {len(GROQ_API_KEY) if GROQ_API_KEY else 0}")  # Debug line
 
 if not GROQ_API_KEY:
     st.error("GROQ_API_KEY not found. Please add it in Streamlit Cloud Settings → Secrets")
