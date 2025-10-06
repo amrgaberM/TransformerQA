@@ -453,7 +453,16 @@ st.markdown("""
 
 # --- ENVIRONMENT SETUP ---
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+# Try Streamlit secrets first, then fall back to .env
+try:
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+except:
+    GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+if not GROQ_API_KEY:
+    st.error("GROQ_API_KEY not found. Please add it in Streamlit Cloud Settings → Secrets")
+    st.stop()
 
 # --- CONFIGURATION ---
 PDF_PATH = Path("./data/NIPS-2017-attention-is-all-you-need-Paper.pdf")
