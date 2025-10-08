@@ -109,34 +109,7 @@ The application will automatically open in your default web browser at `http://l
 
 ---
 
-## Project Architecture
 
-```
-TransformerQA/
-│
-├── Core Application Files
-│   ├── app.py                 # Streamlit frontend interface
-│   ├── rag_pipeline.py        # Core RAG backend implementation
-│   └── requirements.txt       # Python dependency specifications
-│
-├── Configuration
-│   ├── .env                   # Environment variables (local only)
-│   └── .gitignore            # Version control exclusions
-│
-├── Data Management
-│   └── data/                  # Source document storage
-│       └── attention_paper.pdf
-│
-├── Quality Assurance
-│   └── evaluation/            # Testing framework and results
-│       ├── test_dataset.json
-│       └── performance_metrics.json
-│
-└── Documentation
-    └── README.md             # Project documentation
-```
-
----
 
 ## Technical Implementation
 
